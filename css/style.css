@@ -1,0 +1,193 @@
+/* ===== 基本設定 ===== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #D4F9FF;
+    color: #363636;
+    font-family: 'Inter', '微軟正黑體', 'Open Sans', 'Helvetica', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: center;
+    overflow-x: hidden;        /* 圖片透明留白超出畫面時，不要出現橫向捲軸 */
+    /* 不要再用 display:flex + align-items:center，
+       它會讓每個區塊縮成內容寬度，表格和圖片就沒辦法拉滿 */
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+h1 { font-size: 20px; font-weight: 400; line-height: 1.4; }
+h1 span { display: block; }   /* SUGAR DAY 換行 */
+h2 { font-size: 24px; font-weight: 500; margin-bottom: 20px; }
+h3 { font-size: 15px; font-weight: 400; letter-spacing: 0.1em; }
+p  { font-size: 15px; }
+
+/* ===== 主視覺 ===== */
+.hero {
+    padding-top: 32px;         /* 縮短頂部空白，讓導覽列能落在第一個畫面內 */
+}
+
+.header_desktop {
+    display: none;
+}
+
+.header_mobile {
+    position: relative;
+    width: 100%;               /* 滿版，圖片才能貼齊畫面左右邊緣 */
+    max-width: 375px;
+    aspect-ratio: 1 / 1.05;
+    margin: 12px auto 16px;
+}
+
+.header_mobile img {
+    position: absolute;
+    height: auto;
+}
+
+/* PNG 四周有透明留白，所以元素寬度會比「看到的三角形」大。
+   數值以 375px 寬的設計稿為基準估算，位置都相對於 .header_mobile。 */
+.img_left   { width: 66%;   top: -18%;   left: 0; }
+.img_right  { width: 54.5%; top: -16%;   right: 0; }
+.img_center { width: 70%;   top: 44%;    left: 20.8%; }
+
+.hero_text {
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+/* ===== 導覽按鈕（三顆白色膠囊） ===== */
+nav ul {
+    list-style: none;          /* 拿掉圓點 */
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+nav a {
+    display: block;
+    padding: 4px 20px;
+    background-color: #ffffff;
+    color: #363636;
+    font-size: 13px;
+    line-height: 1.8;
+    text-decoration: none;
+    border-radius: 999px;      /* 用大數字就是完整膠囊形 */
+}
+
+/* ===== 一般區塊 ===== */
+.section {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 60px 24px 0;
+}
+
+.value {
+    margin-bottom: 36px;
+}
+
+.value h3 {
+    margin-bottom: 8px;
+}
+
+/* ===== 最新消息 ===== */
+.news {
+    margin-bottom: 16px;
+}
+
+.news time {
+    display: block;
+    font-size: 15px;
+}
+
+/* ===== 菜單 ===== */
+.menu_item {
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.menu_item h3 {
+    font-size: 24px;
+    letter-spacing: 0;
+    margin-bottom: 6px;
+}
+
+.menu_item .en,
+.menu_item .desc {
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.menu_item .desc {
+    margin-top: 6px;
+}
+
+.menu_item img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 16px 0 0 auto;     /* 靠右 */
+    border-radius: 16px;
+}
+
+/* ===== 價目表 ===== */
+.price h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 8px;
+}
+
+.price table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.price th,
+.price td {
+    padding: 2px 8px;
+    font-weight: 400;
+}
+
+.price th {
+    border-bottom: 1px solid #363636;
+    border-top: 1px solid #363636;
+}
+
+.price th:last-child,
+.price td:last-child {
+    text-align: right;
+}
+
+/* ===== 店鋪資訊 ===== */
+#info p {
+    margin-bottom: 12px;
+}
+
+/* ===== Footer ===== */
+footer {
+    margin-top: 80px;
+    padding: 15px 0;
+    background-color: #6BC6FF;
+    color: #363636;
+}
+
+/* ===== 桌機版 ===== */
+@media (min-width: 1280px) {
+    .header_mobile {
+        display: none;
+    }
+    .header_desktop {
+        display: block;
+    }
+}

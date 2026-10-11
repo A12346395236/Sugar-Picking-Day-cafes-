@@ -1,151 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>拾糖日和</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-        <h1> 拾糖日和 </h1>
-        <h1> SUGAR DAY </h1>
+    <!-- 主視覺導覽頁 -->
+    <header class="hero">
+        <h1>拾糖日和<span>SUGAR DAY</span></h1>
 
         <div class="header_mobile">
-            <img src="images/mobile_left.png" alt="蛋糕圖1">
-            <img src="images/mobile_center.png" alt="蛋糕圖2">
-            <img src="images/mobile_right.png" alt="蛋糕圖3">
+            <img class="img_left" src="images/mobile_left.png" alt="蛋糕圖1">
+            <img class="img_center" src="images/mobile_center.png" alt="蛋糕圖2">
+            <img class="img_right" src="images/mobile_right.png" alt="蛋糕圖3">
         </div>
 
-        <div class="header_mobile">
+        <div class="header_desktop">
             <img src="images/desktop_left.png" alt="蛋糕圖1">
             <img src="images/desktop_center.png" alt="蛋糕圖2">
             <img src="images/desktop_right.png" alt="蛋糕圖3">
         </div>
 
-        <p> 每天現做的手工甜點 <br> 用季節水果、奶油與麵粉 <br> 慢慢烤出剛剛好的幸福 </p>
+        <p class="hero_text">每天現做的手工甜點 <br> 用季節水果、奶油與麵粉 <br> 慢慢烤出剛剛好的幸福</p>
 
         <nav>
             <ul>
-                <li> 品牌故事 </li>
-                <li> 菜單 </li>
-                <li> 地址 </li>
+                <li><a href="#story">品牌故事</a></li>
+                <li><a href="#menu">菜單</a></li>
+                <li><a href="#info">地址</a></li>
             </ul>
         </nav>
-    </div>
+    </header>
 
-    <div>
-        <div>
-            <h2> 品牌故事 </h2>
-            <p> 一點甜，一點日常。 <br> 拾糖日和沒有特別華麗的故事。 <br> 只是某一天，我們發現： <br> 生活好像總是在趕路。 <br>
+    <main>
+        <!-- 品牌故事 -->
+        <section class="section" id="story">
+            <h2>品牌故事</h2>
+            <p>一點甜，一點日常。 <br> 拾糖日和沒有特別華麗的故事。 <br> 只是某一天，我們發現： <br> 生活好像總是在趕路。 <br>
                 趕著完成今天還沒做完的事情。 <br> 所以我們想留下一個地方， <br> 讓你可以坐下來， <br> 慢慢喝一杯茶， <br> 吃一塊剛剛好的甜點。 <br>
-                我們相信甜點不需要等待特別的日子。 <br> 今天想吃，就可以是值得慶祝的一天。
-            </p>
+                我們相信甜點不需要等待特別的日子。 <br> 今天想吃，就可以是值得慶祝的一天。</p>
+        </section>
 
-            <h2> 我們的堅持 </h2>
-        </div>
-
-        <div>
-            <div> 
-                <h3> Seasonal </h3>
-                <p> 選擇當季食材  <br> 依照季節更換水果與甜點， <br> 讓每一次來店裡都有一點不同。 </p>
+        <section class="section">
+            <h2>我們的堅持</h2>
+            <div class="value">
+                <h3>Seasonal</h3>
+                <p>選擇當季食材 <br> 依照季節更換水果與甜點， <br> 讓每一次來店裡都有一點不同。</p>
             </div>
-            <div>
-                <h3> Handmade </h3>
-                <p> 每日少量製作， <br> 希望每一份甜點都維持最好的狀態。 </p>
+            <div class="value">
+                <h3>Handmade</h3>
+                <p>每日少量製作， <br> 希望每一份甜點都維持最好的狀態。</p>
             </div>
-            <div>
-                <h3> Simple </h3>
-                <p> 簡單的食材 <br> 不追求過度複雜的味道， <br> 讓奶油、麵粉、水果與巧克力自己說話。 </p>
+            <div class="value">
+                <h3>Simple</h3>
+                <p>簡單的食材 <br> 不追求過度複雜的味道， <br> 讓奶油、麵粉、水果與巧克力自己說話。</p>
             </div>
-            <div>
-                
-                <div> 
-                    <h3> 01｜草莓奶油蛋糕 </h3>
-                    <p>Strawberry Shortcake <br> 新鮮草莓 × 香緹奶油 × 柔軟戚風 </p>
-                    <p> 輕盈的戚風蛋糕搭配酸甜草莓， <br> 再覆上一層柔滑奶油， <br>  是拾糖日和最經典的季節甜點。 </p>
-                    <img src="images/Strawberry Shortcake.png" alt="草莓奶油蛋糕">
-                </div>
-                
-                <div>
-                    <h3> 02｜海鹽焦糖布丁 </h3>
-                    <p> Sea Salt Caramel Pudding <br> 焦糖 × 牛奶 × 海鹽 </p>
-                    <p> 微苦焦糖與濃郁牛奶交織， <br> 最後以一點海鹽收尾， <br>  甜而不膩。 </p>
-                    <img src="images/Sea Salt Caramel Pudding.png" alt="海鹽焦糖布丁">
-                </div>
-                
-                <div>
-                    
-                    <h3> 03｜檸檬奶霜塔 </h3>
-                    <p> Lemon Cream Tart <br> 檸檬 × 奶油 × 杏仁塔皮 </p>
-                    <p> 酥脆塔皮裡藏著清爽檸檬餡， <br> 搭配柔軟奶霜， <br>  酸甜之間帶著淡淡的奶香。 </p>
-                    <img src="images/Lemon Cream Tart.png" alt="檸檬奶霜塔">
-                </div>
-                
-                <h4> Cake｜蛋糕 </h4>
-                <div>
-                    <table>
-                        <tr>
-                            <td> 品項 </td>
-                            <td> 價格 </td>
-                        </tr>
-                        <tr>
-                            <td> 草莓奶油蛋糕 </td>
-                            <td> NT$180 </td>
-                        </tr>
-                        <tr>
-                            <td> 伯爵茶戚風 </td>
-                            <td> NT$160 </td>
-                        </tr>
-                        <tr>
-                            <td> 焦糖香蕉蛋糕 </td>
-                            <td> NT$170 </td>
-                        </tr>
-                        <tr>
-                            <td> 巧克力榛果蛋糕 </td>
-                            <td> NT$190 </td>
-                        </tr>
-                    </table>
-                 </div>
+        </section>
 
-                <h4> Tart & Pie｜塔派 </h4>
-                <div>
-                    <table>
-                        <tr>
-                            <td> 品項 </td>
-                            <td> 價格 </td>
-                        </tr>
-                        <tr>
-                            <td> 檸檬奶霜塔 </td>
-                            <td> NT$150 </td>
-                        </tr>
-                        <tr>
-                            <td> 蘋果肉桂派 </td>
-                            <td> NT$160 </td>
-                        </tr>
-                        <tr>
-                            <td> 栗子蒙布朗塔 </td>
-                            <td> NT$180 </td>
-                        </tr>
-                        <tr>
-                            <td> 焦糖堅果塔 </td>
-                            <td> NT$170 </td>
-                        </tr>
-                    </table>
-                 </div>
-            <div>
-                <h3> 店鋪資訊 </h3>
-                <p> 
-                地址 <br> 台北市大安區日和街 18 號 <br> 🕐 11:00 — 20:00 <br>  週一公休 <br> 
-                ☎ 02-1234-5678 <br> 
-                </p>
-                <p>
-                 交通方式 <br> 捷運： <br> 忠孝復興站 3 號出口 <br> 步行約 8 分鐘。
-                </p>
+        <!-- 最新消息（設計稿有，原本漏掉了） -->
+        <section class="section">
+            <h2>限定甜點出爐</h2>
+            <div class="news">
+                <time>08.31</time>
+                <p>秋季栗子系列開始販售</p>
             </div>
-    </div>
+            <div class="news">
+                <time>08.24</time>
+                <p>檸檬奶霜塔重新回到菜單</p>
+            </div>
+            <div class="news">
+                <time>08.15</time>
+                <p>中秋限定餅乾禮盒開始預購</p>
+            </div>
+        </section>
 
-<footer> 拾糖日和 </footer>
+        <!-- 菜單商品介紹 -->
+        <section class="section menu" id="menu">
+            <article class="menu_item">
+                <h3>01｜草莓奶油蛋糕</h3>
+                <p class="en">Strawberry Shortcake <br> 新鮮草莓 × 香緹奶油 × 柔軟戚風</p>
+                <p class="desc">輕盈的戚風蛋糕搭配酸甜草莓， <br> 再覆上一層柔滑奶油， <br> 是拾糖日和最經典的季節甜點。</p>
+                <img src="images/Strawberry Shortcake.png" alt="草莓奶油蛋糕">
+            </article>
 
+            <article class="menu_item">
+                <h3>02｜海鹽焦糖布丁</h3>
+                <p class="en">Sea Salt Caramel Pudding <br> 焦糖 × 牛奶 × 海鹽</p>
+                <p class="desc">微苦焦糖與濃郁牛奶交織， <br> 最後以一點海鹽收尾， <br> 甜而不膩。</p>
+                <img src="images/Sea Salt Caramel Pudding.png" alt="海鹽焦糖布丁">
+            </article>
 
+            <article class="menu_item">
+                <h3>03｜檸檬奶霜塔</h3>
+                <p class="en">Lemon Cream Tart <br> 檸檬 × 奶油 × 杏仁塔皮</p>
+                <p class="desc">酥脆塔皮裡藏著清爽檸檬餡， <br> 搭配柔軟奶霜， <br> 酸甜之間帶著淡淡的奶香。</p>
+                <img src="images/Lemon Cream Tart.png" alt="檸檬奶霜塔">
+            </article>
+        </section>
+
+        <!-- 價目表 -->
+        <section class="section price">
+            <h4>Cake｜蛋糕</h4>
+            <table>
+                <thead>
+                    <tr><th>品項</th><th>價格</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>草莓奶油蛋糕</td><td>NT$180</td></tr>
+                    <tr><td>伯爵茶戚風</td><td>NT$160</td></tr>
+                    <tr><td>焦糖香蕉蛋糕</td><td>NT$170</td></tr>
+                    <tr><td>巧克力榛果蛋糕</td><td>NT$190</td></tr>
+                </tbody>
+            </table>
+
+            <h4>Tart &amp; Pie｜塔派</h4>
+            <table>
+                <thead>
+                    <tr><th>品項</th><th>價格</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>檸檬奶霜塔</td><td>NT$150</td></tr>
+                    <tr><td>蘋果肉桂派</td><td>NT$160</td></tr>
+                    <tr><td>栗子蒙布朗塔</td><td>NT$180</td></tr>
+                    <tr><td>焦糖堅果塔</td><td>NT$170</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 店鋪資訊 -->
+        <section class="section" id="info">
+            <h2>店鋪資訊</h2>
+            <p>地址 <br> 台北市大安區日和街 18 號 <br> 🕐 11:00 — 20:00 <br> 週一公休 <br> ☎ 02-1234-5678</p>
+            <p>交通方式 <br> 捷運： <br> 忠孝復興站 3 號出口 <br> 步行約 8 分鐘。</p>
+        </section>
+    </main>
+
+    <footer>拾糖日和</footer>
 </body>
 </html>
